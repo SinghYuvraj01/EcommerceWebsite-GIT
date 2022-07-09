@@ -9,7 +9,7 @@
 {
     /* background: url(images/banner\ image.jpg);
     background-image: linear-gradient(to top , rgba(0,0,0,1)); */
-    background:linear-gradient(to bottom , rgba(0, 0, 0, 0.2),#000000), url(images/banner\ image.jpg);
+    background:linear-gradient(to bottom , rgba(0, 0, 0, 0.1),#000000), url(images/banner\ image.jpg);
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -30,6 +30,7 @@ header p
     color: #f83a68;
     font-size: 20px;
     font-family: 'Kaushan Script', cursive;
+    cursor: pointer;
 }
 header p span
 {
@@ -42,6 +43,7 @@ header img
     background-color: #f83a68;
     padding: 0.3em;
     border-radius: 10px;
+    cursor: pointer;
 }
 nav ul
 {
@@ -115,6 +117,63 @@ nav ul li a:hover
 
 
 
+/* Here we will style the categories page */
+.categories
+{
+   /* padding-top: ; */
+   padding: 3% 5%;
+   background-color: black;
+   width: 100%;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+   max-width: 1920;
+}
+.categoriesText
+{
+     margin-top: 5%;
+     text-align: center;
+}
+.categoriesText h2
+{
+    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+.categoriesText p
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    padding-top: 0.7em;
+}
+
+.categoryRow
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.categoryCol
+{
+    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+    border-radius: 10px;
+    padding: 0.5em 0.5em;
+    margin-bottom: 5%;
+}
+.categoryCol img
+{
+    height: 370px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+
+
+
 
 
 @media only screen and (min-width: 320px)  and (max-width:767px)
@@ -181,7 +240,7 @@ nav ul li a:hover
 
     .homePage
    {
-    background:linear-gradient(to bottom , rgba(0, 0, 0, 0.2),#000000), url(images/banner\ image.jpg);
+    background:linear-gradient(to bottom , rgba(0, 0, 0, 0.1),#000000), url(images/banner\ image.jpg);
     height: 100vh;
     width: 100%;
     background-position: center;
