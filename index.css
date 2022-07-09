@@ -163,12 +163,25 @@ nav ul li a:hover
     border-radius: 10px;
     padding: 0.5em 0.5em;
     margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: inline-block;
 }
 .categoryCol img
 {
-    height: 370px;
+    height: 340px;
     display: inline-block;
     border-radius: 10px;
+}
+.categoryCol p
+{
+    margin-top: 0.3em;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    padding: 0.1em 0.2em;
+    text-align: center;
 }
 
 
