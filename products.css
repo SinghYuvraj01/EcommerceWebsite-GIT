@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.offer
+{
+    background-color: #df5547;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 3% 5%;
+    max-width: 1920px;
+    position: relative;
+}
+.offerRow
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.Offercol img
+{
+    height: 400px;
+}
+.Offercol p
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+.Offercol h1
+{
+    color: white;
+    margin: 0.4em 0em;
+    font-size: 50px;
+}
+.Offercol small
+{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.Offercol button
+{
+    margin-top: 2em;
+    background-color: #df5547;
+    /* background-color: black; */
+    border: solid 0.5px white;
+    border-radius: 10px;
+    color: white;
+    padding: 0.4em 1em;
+    transition: ease .30s;
+}
+.Offercol button:hover
+{
+    margin-top: 2em;
+    background-color: #df5547;
+    /* background-color: black; */
+    border: solid 0.5px white;
+    border-radius: 10px;
+    color: white;
+    padding: 0.4em 1em;
+    transition: ease .30s;
+    transform: translateY(+10px);
+}
+.Offercol button a
+{
+   text-decoration: none;
+   color:white;
+   font-family: 'Poppins', sans-serif;
+   font-size: 15px;
+}
+
+
+
+
+.products
+{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 3% 5%;
+    max-width: 1920px;
+    position: relative;
+    padding-top: 20%;
+}
+.products h2
+{
+    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+.productsCol
+{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.productsCol img
+{
+    height: 400px;
+}
