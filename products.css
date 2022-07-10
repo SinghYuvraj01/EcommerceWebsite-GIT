@@ -46,7 +46,7 @@
 }
 .Offercol button
 {
-    margin-top: 2em;
+    margin-top: 1.5em;
     background-color: #df5547;
     /* background-color: black; */
     border: solid 0.5px white;
@@ -81,14 +81,14 @@
 .products
 {
     background-color: black;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-position: center;
     background-size: cover;
     padding: 3% 5%;
     max-width: 1920px;
     position: relative;
-    padding-top: 20%;
+
 }
 .products h2
 {
@@ -96,15 +96,66 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 40px;
+    text-align: center;
+    margin-top: 10%;
+    /* margin-top: 1.5em; */
+    position: relative;
+}
+.quote 
+{
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 0.7em;
+    font-size: 18px;
+}
+.productsRow
+{
+    display: flex;
+    flex-basis: 25%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 .productsCol
 {
-    flex-basis: 25%;
-    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
     min-width: 200px;
-    margin-bottom: 50px;
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    transition: ease 0.3s;
+}
+.productsCol:hover
+{
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    min-width: 200px;
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    transition: ease .30s;
+    transform: translateY(+10px); 
 }
 .productsCol img
 {
-    height: 400px;
+    height: 340px;
+    border-radius: 10px;
+    padding: 0.4em 0em;   
+}
+.productsColInfo
+{
+    padding: 0.3em;
+}
+.productsCol p
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.rating i
+{
+    color: #df5547;
 }

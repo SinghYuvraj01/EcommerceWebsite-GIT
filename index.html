@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name = "author" content = "Yuvraj Singh">
+    <meta name="author" content="Yuvraj Singh">
     <title>Ecommerce Website</title>
-    
+
     <!-- Here we will link the css stylesheet -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="products.css">
 
+    <!-- This link is for the star rating -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Here we are adding link to google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    
+
     <!-- Here is the home page -->
     <div class="homePage">
         <header>
@@ -35,26 +40,26 @@
             <img src="images/cart.png" width="30px" height="28px">
         </header>
 
-       
+
         <div class="homepage_content">
             <a href="#">2022 Collections</a>
             <h1>You Must Always <br>Look Classy</h1>
             <p>Clothes that will make you feel confident</p>
         </div>
 
-      
-        
 
-    
+
+
+
     </div>
 
-    
+
     <!-- Here we will add the categories section -->
     <div class="categories">
 
         <div class="categoriesText">
-        <h2>Categories</h2>
-        <p>“Style is a simple way of saying complicated things.” ~ Jean Cocteau</p>
+            <h2>Categories</h2>
+            <p>“Style is a simple way of saying complicated things.” ~ Jean Cocteau</p>
         </div>
 
         <div class="categoryRow">
@@ -76,37 +81,94 @@
 
 
     <!-- Here is the offer section -->
-    <div class="offer">    
-            <div class="offerRow">
-                <div class="Offercol">
-                    <img src="images/exclusive.png" offer ="offerImg">
-                </div>
-                <div class="Offercol">
-                    <p>Exclusively Availabe of StyleHub</p>
-                    <h1>Smart Band 4</h1>
-                    <small>The Mi Band 4 featureures a 39.9% larget than ( Mi Band 3 ) AMOLED color full-touch  <br>display with adjustable brightness , so everything is clear as can be.</small>
-                    <br>
-                    <button><a href="https://www.youtube.com/watch?v=LVl8uy0qHDw" target="_blank">CHEKCOUT REVIEW</a></button>
-                </div>
+    <div class="offer">
+        <div class="offerRow">
+            <div class="Offercol">
+                <img src="images/exclusive.png" offer="offerImg">
             </div>
+            <div class="Offercol">
+                <p>Exclusively Availabe of StyleHub</p>
+                <h1>Smart Band 4</h1>
+                <small>The Mi Band 4 featureures a 39.9% larget than ( Mi Band 3 ) AMOLED color full-touch <br>display
+                    with adjustable brightness , so everything is clear as can be.</small>
+                <br>
+                <button><a href="https://www.youtube.com/watch?v=LVl8uy0qHDw" target="_blank">CHEKCOUT
+                        REVIEW</a></button>
+            </div>
+        </div>
     </div>
 
-    
+
     <!-- Here is hte featured products -->
     <div class="products">
         <h2>Features Products</h2>
+        <p class = "quote">“To me, style is all about expressing your individuality freely and courageously.” Timothy John</p>
         <div class="productsRow">
+
             <div class="productsCol">
                 <img src="images/product-1.jpg" alt="">
-                <h4>Red Printed T-shirt</h4>
-                <p>$50.00</p>
+                <div class="productsColInfo">
+                    <p>Red Printed T-shirt</p>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                    <p>$50.00</p>
+                </div>
             </div>
-            <div class="productsCol"></div>
-            <div class="productsCol"></div>
-            <div class="productsCol"></div>
+
+            <div class="productsCol">
+                <img src="images/product-2.jpg">
+                <div class="productsColInfo">
+                    <p>Red Printed T-shirt</p>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+
+            <div class="productsCol">
+                <img src="images/product-3.jpg">
+                <div class="productsColInfo">
+                    <p>Red Printed T-shirt</p>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+
+            <div class="productsCol">
+                <img src="images/product-4.jpg" >
+                <div class="productsColInfo">
+                    <p>Red Printed T-shirt</p>
+                  <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                  </div>
+                    <p>$50.00</p>
+                </div>
+            </div>
+            
         </div>
     </div>
 
 
 </body>
+
 </html>
