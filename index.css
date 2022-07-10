@@ -189,7 +189,7 @@ nav ul li a:hover
 
 
 
-@media only screen and (min-width: 320px)  and (max-width:767px)
+/* @media only screen and (min-width: 320px)  and (max-width:767px)
 {
 
     .homePage
@@ -306,7 +306,7 @@ nav ul li a:hover
         font-family: 'Poppins', sans-serif;
         text-decoration: nonoe;
         font-size: 30px;
-        /* width: 50%; */
+    
     }
   
-}
+} */
