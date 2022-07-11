@@ -7,7 +7,7 @@
 
 .offer
 {
-    background-color: #df5547;
+    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -35,7 +35,7 @@
 .Offercol h1
 {
     color: white;
-    margin: 0.4em 0em;
+    margin: 0.3em 0em;
     font-size: 50px;
 }
 .Offercol small
@@ -47,7 +47,7 @@
 .Offercol button
 {
     margin-top: 1.5em;
-    background-color: #df5547;
+    background-color: transparent;
     /* background-color: black; */
     border: solid 0.5px white;
     border-radius: 10px;
@@ -58,14 +58,14 @@
 .Offercol button:hover
 {
     margin-top: 2em;
-    background-color: #df5547;
+    background-color: transparent;
     /* background-color: black; */
     border: solid 0.5px white;
     border-radius: 10px;
     color: white;
     padding: 0.4em 1em;
     transition: ease .3s;
-    transform: translateY(+5px);
+    transform: translateY(+3px);
 }
 .Offercol button a
 {
@@ -94,7 +94,7 @@
     background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
     margin-top: 8%;
     position: relative;

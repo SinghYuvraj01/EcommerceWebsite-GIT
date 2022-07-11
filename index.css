@@ -1,23 +1,22 @@
 *
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 body
 {
-   width: 100%;
+    overflow-x: hidden;
+    max-width: 1920px;
 }
 
 .homePage
 {
-    /* background: url(images/banner\ image.jpg);
-    background-image: linear-gradient(to top , rgba(0,0,0,1)); */
     background:linear-gradient(to bottom , rgba(0, 0, 0, 0.1),#000000), url(images/banner\ image.jpg);
     height: 100vh;
     width: 100%;
     background-position: center;
     background-size: cover;
+    box-sizing: border-box;
     padding: 3% 5%;
     max-width: 1920px;
     position: relative;
@@ -32,7 +31,7 @@ header
 header p
 {
     color: #f83a68;
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Kaushan Script', cursive;
     cursor: pointer;
 }
@@ -80,6 +79,10 @@ nav ul li a:hover
     font-size: 1em;
     font-weight: 500;
 }
+.menu-icon
+{
+    width: 28px;
+}
 
 .homepage_content
 {
@@ -121,6 +124,8 @@ nav ul li a:hover
 
 
 
+
+
 /* Here we will style the categories page */
 .categories
 {
@@ -131,7 +136,8 @@ nav ul li a:hover
    background-position: center;
    background-size: cover;
    position: relative;
-   max-width: 1920;
+   box-sizing: border-box;
+   max-width: 1920px;
 }
 .categoriesText
 {
@@ -143,14 +149,14 @@ nav ul li a:hover
     background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 50px;
+    font-size: 45px;
 }
 .categoriesText p
 {
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    padding-top: 0.7em;
+    font-size: 18px;
+    padding-top: 0.6em;
 }
 
 .categoryRow
@@ -173,7 +179,7 @@ nav ul li a:hover
 }
 .categoryCol img
 {
-    height: 340px;
+    height: 300px;
     display: inline-block;
     border-radius: 10px;
 }
@@ -191,11 +197,31 @@ nav ul li a:hover
 
 
 
+/* Here we are adding the media query for menu */
+@media only screen and (max-width: 479px)  and (min-width:280px)
+{
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
 
-
-/* @media only screen and (min-width: 320px)  and (max-width:767px)
+ 
+@media only screen and (max-width:480px)
 {
 
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     .homePage
    {
     background:linear-gradient(to bottom , rgba(0, 0, 0, 0.2),#000000), url(images/banner\ image.jpg);
@@ -252,8 +278,17 @@ nav ul li a:hover
 
 
 
-@media only screen and (min-width: 768px)  and (max-width:1280px)
+@media only screen and (max-width: 900px)  and (min-width:481px)
 {
+    
+     html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
 
     .homePage
    {
@@ -313,4 +348,4 @@ nav ul li a:hover
     
     }
   
-} */
+} 
