@@ -11,7 +11,7 @@
     width: 100%;
     background-position: center;
     background-size: cover;
-    padding: 3% 5%;
+    padding: 3% 8%;
     max-width: 1920px;
     position: relative;
 }
@@ -20,7 +20,11 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-   
+    flex-wrap: wrap;
+}
+.Offercol
+{
+    padding: 1em;
 }
 .Offercol img
 {
@@ -81,13 +85,13 @@
 .products
 {
     background-color: black;
-    /* height: 100vh; */
     width: 100%;
     background-position: center;
     background-size: cover;
-    padding: 3% 5%;
+    padding: 3% 8%;
     max-width: 1920px;
     position: relative;
+    box-sizing: border-box;
 }
 .products h2
 {
@@ -104,17 +108,20 @@
     color: white;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    padding-top: 0.7em;
+    padding: 0.7em 0em;
     font-size: 18px;
 }
 .productsRow
 {
     display: flex;
-    flex-basis: 25%;
+    /* flex-basis: 25%; */
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin-top: 6%;
     margin-bottom: 6%;
+
+    
 }
 .productsCol
 {
@@ -126,6 +133,8 @@
     padding: 0.2em 0.8em;
     transition: ease 0.3s;
     text-align: center;
+    position: relative;
+    margin-bottom: 10%;
 }
 .productsCol:hover
 {
@@ -137,17 +146,16 @@
     padding: 0.2em 0.8em;
     transition: ease .30s;
     transform: translateY(+10px); 
+    margin-bottom: 10%;
 }
 .productsCol img
 {
     height: 300px;
     border-radius: 10px;
-    padding: 0.4em 0em;   
+    display: inline;
+    padding: 0.4em 0em;  
 }
-/* .productsColInfo
-{
-    padding: 0.1em;
-} */
+
 .productsCol p
 {
     font-family: 'Poppins', sans-serif;
@@ -166,11 +174,25 @@
 
 
 
-/* Here we are adding the media query for menu */
+/* Here we are adding the media query for offer section */
 
 @media only screen and (max-width: 479px)  and (min-width:280px)
 {
      html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+}
+
+@media only screen and (max-width:480px)
+{
+
+    html,body
     {
         width: 100%;
         height: 100%;
@@ -186,34 +208,81 @@
     {
         color: white;
         font-family: 'Poppins', sans-serif;
-        font-size: 15px;
+        font-size: 17px;
     }
     .Offercol h1
     {
         color: white;
         margin: 0.3em 0em;
-        font-size: 30px;
+        font-size: 25px;
     }
     .Offercol small
     {
         color: white;
         font-family: 'Poppins', sans-serif;
-        font-size: 16px;
+        font-size: 15px;
     }
-
-}
-
- 
-@media only screen and (max-width:480px)
-{
-
-    html,body
+    .Offercol button a
     {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
+       text-decoration: none;
+       color:white;
+       font-family: 'Poppins', sans-serif;
+       font-size: 15px;
     }
-   
+    .Offercol button
+    {
+        margin-top: 1.5em;
+        background-color: transparent;
+        /* background-color: black; */
+        border: solid 0.5px white;
+        border-radius: 10px;
+        color: white;
+        padding: 0.3em 1em;
+        transition: ease .3s;
+    }
+    .Offercol button:hover
+    {
+        margin-top: 2em;
+        background-color: transparent;
+        /* background-color: black; */
+        border: solid 0.5px white;
+        border-radius: 10px;
+        color: white;
+        padding: 0.4em 1em;
+        transition: ease .3s;
+        transform: translateY(+3px);
+    } 
+
+
+
+    /*  Here is the media query for the products section */
+    .products h2
+    {
+        background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+        text-align: center;
+        margin-top: 8%;
+        position: relative;
+    }
+    .quote 
+    {
+        color: white;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        padding-top: 0.7em;
+        font-size: 15px;
+    }
+    .productsCol img
+    {
+        height: 250px;
+        border-radius: 10px;
+        display: inline;
+        padding: 0.4em 0em;  
+    }
 }
+
+
+
+
