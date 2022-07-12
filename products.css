@@ -158,3 +158,62 @@
 {
     color: #df5547;
 }
+
+
+
+
+
+
+
+
+/* Here we are adding the media query for menu */
+
+@media only screen and (max-width: 479px)  and (min-width:280px)
+{
+     html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .Offercol img
+    {
+        height: 200px;
+    }
+    .Offercol p
+    {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+    }
+    .Offercol h1
+    {
+        color: white;
+        margin: 0.3em 0em;
+        font-size: 30px;
+    }
+    .Offercol small
+    {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+    }
+
+}
+
+ 
+@media only screen and (max-width:480px)
+{
+
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+   
+}

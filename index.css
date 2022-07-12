@@ -165,6 +165,7 @@ nav ul li a:hover
     justify-content: space-evenly;
     align-items: center;
     margin-top: 6%;
+    flex-wrap: wrap;
 }
 
 .categoryCol
@@ -176,6 +177,7 @@ nav ul li a:hover
     margin-left: 2%;
     margin-right: 2%;
     display: inline-block;
+    position: relative;
 }
 .categoryCol img
 {
@@ -191,6 +193,7 @@ nav ul li a:hover
     font-family: 'Poppins', sans-serif;
     border-radius: 5px;
     padding: 0.1em 0.2em;
+    width: auto;
     text-align: center;
 }
 
@@ -198,9 +201,10 @@ nav ul li a:hover
 
 
 /* Here we are adding the media query for menu */
+
 @media only screen and (max-width: 479px)  and (min-width:280px)
 {
-    html,body
+     html,body
     {
         width: 100%;
         height: 100%;
@@ -236,6 +240,20 @@ nav ul li a:hover
     nav ul
     {
         display: none;
+    }
+    header p
+    {
+        color: #f83a68;
+        font-size: 20px;
+        font-family: 'Kaushan Script', cursive;
+        cursor: pointer;
+    }
+    header img
+    {
+        background-color: #f83a68;
+        padding: 0.4em;
+        border-radius: 10px;
+        cursor: pointer;
     }
 
     .homepage_content
@@ -273,12 +291,57 @@ nav ul li a:hover
         text-decoration: nonoe;
         font-size: 15px;
     }
+
+
+    /* Here starts the media query for the categories section */
+    .categories
+    {
+       /* padding-top: ; */
+       padding: 8%;
+       background-color: black;
+       width: 100%;
+       background-position: center;
+       background-size: cover;
+       position: relative;
+       box-sizing: border-box;
+       max-width: 1920px;
+    }
+    .categoriesText h2
+    {
+        background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+    }
+    .categoriesText p
+    {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        padding-top: 0.6em;
+    }
+    .categoryCol
+    {
+        background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+        border-radius: 10px;
+        padding: 0.5em 0.5em;
+        margin-bottom: 15%;
+        /* margin-left: 2%;
+        margin-right: 2%; */
+        display: inline;
+    }
+    .categoryCol img
+    {
+        height: 200px;
+        display: inline;
+        border-radius: 10px;
+    }
   
 }
 
 
 
-@media only screen and (max-width: 900px)  and (min-width:481px)
+/* @media only screen and (max-width: 900px)  and (min-width:481px)
 {
     
      html,body
@@ -348,4 +411,4 @@ nav ul li a:hover
     
     }
   
-} 
+}  */
