@@ -218,6 +218,14 @@ ul li
         flex-wrap: wrap;
         display: none;
     }
+    .footerRow
+    {
+        text-align: center;
+    }
+    .footerCol-1 , .footerCol-2 , .footerCol-3 ,.footerCol-4
+    {
+        flex-basis: 100%;
+    }
   
 }
 

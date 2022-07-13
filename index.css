@@ -82,6 +82,7 @@ nav ul li a:hover
 .menu-icon
 {
     width: 28px;
+    display: none;
 }
 
 .homepage_content
@@ -130,7 +131,7 @@ nav ul li a:hover
 .categories
 {
    /* padding-top: ; */
-   padding: 3% 5%;
+   padding: 3% 8%;
    background-color: black;
    width: 100%;
    background-position: center;
@@ -202,7 +203,7 @@ nav ul li a:hover
 
 /* Here we are adding the media query for menu */
 
-@media only screen and (max-width: 479px)  and (min-width:280px)
+/* @media only screen and (max-width: 479px)  and (min-width:280px)
 {
      html,body
     {
@@ -212,7 +213,7 @@ nav ul li a:hover
         padding: 0;
         overflow-x: hidden;
     }
-}
+} */
 
  
 @media only screen and (max-width:480px)
@@ -226,6 +227,31 @@ nav ul li a:hover
         padding: 0;
         overflow-x: hidden;
     }
+    .menu-icon
+    {
+        width: 28px;
+        display: block;
+        cursor: pointer;
+    }
+    nav ul
+    {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li
+    {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 20px;
+        text-align: right;
+    }
+
     .homePage
    {
     background:linear-gradient(to bottom , rgba(0, 0, 0, 0.2),#000000), url(images/banner\ image.jpg);
@@ -237,10 +263,7 @@ nav ul li a:hover
     max-width: 767px;
     position: relative;
    }
-    nav ul
-    {
-        display: none;
-    }
+
     header p
     {
         color: #f83a68;
@@ -259,7 +282,7 @@ nav ul li a:hover
     .homepage_content
     {
         margin-left: 5%;
-        margin-top: 50%;
+        margin-top: 60%;
         display: inline-block;
         text-shadow: black;
         text-align: left;
@@ -273,6 +296,7 @@ nav ul li a:hover
         font-size: 0.8em;
         padding: 0.3em 0.6em;
         border-radius: 4px;
+        border: none;
         
     }
     .homepage_content h1
@@ -320,14 +344,16 @@ nav ul li a:hover
         font-size: 15px;
         padding-top: 0.6em;
     }
+    .categoryRow
+    {
+        text-align: center;
+    }
     .categoryCol
     {
         background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
         border-radius: 10px;
         padding: 0.5em 0.5em;
         margin-bottom: 15%;
-        /* margin-left: 2%;
-        margin-right: 2%; */
         display: inline;
     }
     .categoryCol img
@@ -338,6 +364,8 @@ nav ul li a:hover
     }
   
 }
+
+
 
 
 
