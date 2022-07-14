@@ -4,6 +4,83 @@
     padding: 0;
     box-sizing: border-box;
 }
+.newsletter
+{
+    padding: 5% 8%;
+    /* margin: 3% 8%; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+.newstext h4
+{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+    width: 55%;
+    padding: 0.3em;
+    text-align: center;
+    border-radius: 10px;
+    /* font-size: 18px; */
+    color: white;
+}
+.newstext p
+{
+    margin-top: 0.2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.form
+{
+    display: flex;
+    width: 40%;
+    padding-top: 0.1em;
+}
+.form input
+{
+   width: 100%;
+   height: 2.5rem;
+   padding: 1em;
+   /* font-size: 14px; */
+   border-radius: 10px;
+   border: solid 0.5px #f83a68;
+   outline: none;
+   border-top-right-radius: 0 ;
+   border-bottom-right-radius: 0 ;
+}
+
+.form button
+{
+    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+    border: none;
+    width: 7em;
+    height: 2.5rem;
+    font-size: 1em;
+    border-radius: 10px;
+    border-top-left-radius: 0 ;
+    border-bottom-left-radius: 0 ;
+    color: white;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .testimonial
 {
