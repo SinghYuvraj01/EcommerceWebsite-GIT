@@ -207,7 +207,7 @@ nav ul li a:hover
     cursor: pointer;
     text-align: center;
     position: relative;
-    transition: ease 0.4s;
+    transition: ease 0.3s;
 }
 .fpRow .fpCol:hover
 {

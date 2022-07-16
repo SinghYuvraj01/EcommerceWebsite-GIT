@@ -82,90 +82,93 @@
 
 
 
-.products
+
+
+/* Here we are styling the new arrival products */
+.newArrival 
 {
     background-color: black;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
     padding: 3% 8%;
-    max-width: 1920px;
-    position: relative;
-    box-sizing: border-box;
 }
-.products h2
+.newArrival .headingArrival
 {
-    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 45px;
     text-align: center;
-    margin-top: 8%;
-    position: relative;
-}
-.quote 
-{
     color: white;
-    text-align: center;
+    margin: 2.5em 0;
     font-family: 'Poppins', sans-serif;
-    padding: 0.7em 0em;
-    font-size: 18px;
 }
-.productsRow
+.newArrival .headingArrival h4
+{
+   font-size: 3em;
+}
+.newArrival .headingArrival p
+{
+    font-size: 1.25em;
+}
+.nARow
 {
     display: flex;
-    /* flex-basis: 25%; */
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     align-items: center;
-    margin-top: 6%;
-    margin-bottom: 6%;
-
-    
 }
-.productsCol
+.nARow .nACOL
 {
-    background-color: white;
+    width: 23%;
+    min-width: 250px;
+    border: 1px solid white;
     border-radius: 10px;
-    margin: auto;
-    min-width: 200px;
-    display: inline-block;
-    padding: 0.2em 0.8em;
-    transition: ease 0.3s;
+    padding: 10px 12px;
+    margin: 15px 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
     text-align: center;
     position: relative;
-    margin-bottom: 10%;
+    transition: ease 0.3s;
 }
-.productsCol:hover
+.nARow .nACOL:hover
 {
-    background-color: white;
+    width: 23%;
+    min-width: 250px;
+    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+    border: none;
     border-radius: 10px;
-    margin: auto;
-    min-width: 200px;
-    display: inline-block;
-    padding: 0.2em 0.8em;
-    transition: ease .30s;
-    transform: translateY(+10px); 
-    margin-bottom: 10%;
-}
-.productsCol img
-{
-    height: 300px;
-    border-radius: 10px;
-    display: inline;
-    padding: 0.4em 0em;  
-}
-
-.productsCol p
-{
+    padding: 10px 12px;
+    margin: 15px 0;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+.nARow .nACOL img
+{
+    width: 100%;
+    border-radius: 10px;
+}
+.nARow .nACOL .des
+{
+    text-align: start;
+}
+.nARow .nACOL .des i
+{
+    color: white;
+}
+.nARow .nACOL .cart
+{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+    border: solid 0.5px white;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
 
-.rating i
-{
-    color: #df5547;
-}
 
 
 

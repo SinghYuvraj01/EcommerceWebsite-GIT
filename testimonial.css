@@ -4,6 +4,71 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Here we are styling the testimonial section */
+.testimonial
+{
+    background-color: black;
+    width: 100%;
+    padding: 3% 8%;
+    max-width: 1920px;
+    position: relative;
+}
+.testimonialRow
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-basis: 33.3%;
+    margin-top: 10em;
+}
+.testimonialCol
+{
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    display: inline-block;
+    padding: 0.6em;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+.testimonialCol i
+{
+    color: #df5547;
+}
+.testimonialCol p
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 0.5em;
+}
+.rating
+{
+    padding-top: 0.8em;
+}
+.testimonialCol img
+{
+    width: 50px;
+    margin-top: 15px;
+    border-radius: 50%;
+}
+.testimonialCol h3
+{
+    margin-top: 0.5em;
+    padding: 0.2em;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+
+/* Here we are styling our newsletter */
 .newsletter
 {
     padding: 5% 8%;
@@ -82,67 +147,6 @@
 
 
 
-.testimonial
-{
-    background-color: black;
-    /* height: 100vh; */
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    padding: 3% 8%;
-    max-width: 1920px;
-    position: relative;
-}
-.testimonialRow
-{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-basis: 33.3%;
-}
-.testimonialCol
-{
-    background-color: white;
-    border-radius: 5px;
-    margin: auto;
-    display: inline-block;
-    padding: 0.6em;
-    text-align: center;
-    cursor: pointer;
-    margin-bottom: 10%;
-}
-.testimonialCol i
-{
-    color: #df5547;
-}
-.testimonialCol p
-{
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-    padding-top: 0.5em;
-    /* text-decoration: none; */
-}
-.rating
-{
-    padding-top: 0.8em;
-}
-.testimonialCol img
-{
-    width: 50px;
-    margin-top: 15px;
-    border-radius: 50%;
-}
-.testimonialCol h3
-{
-    margin-top: 0.5em;
-    padding: 0.2em;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
-    border-radius: 10px;
-    text-align: center;
-}
 
 
 
