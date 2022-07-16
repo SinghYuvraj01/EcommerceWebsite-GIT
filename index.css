@@ -175,111 +175,82 @@ nav ul li a:hover
 {
     text-align: center;
     color: white;
+    margin: 2.5em 0;
+    font-family: 'Poppins', sans-serif;
 }
-.featuredProductsRow
+.featuredProducts .heading h2
+{
+    font-size: 3em;
+}
+.featuredProducts .heading p
+{
+    font-size: 1.25em;
+}
+.fpRow
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 5em;
 }
-.featuredProductsRow .featuredProductsCol 
+.fpRow .fpCol 
 {
     width: 23%;
     min-width: 250px;
-    border: 1px solid #f83a68;
+    border: 1px solid white;
+    border-radius: 10px;
     padding: 10px 12px;
     margin: 15px 0;
     font-family: 'Poppins', sans-serif;
     color: white;
     cursor: pointer;
     text-align: center;
+    position: relative;
+    transition: ease 0.4s;
 }
-
-.featuredProductsRow .featuredProductsCol img
+.fpRow .fpCol:hover
 {
-    width: 90%;
-    border-radius: 15px;
-}
-.featuredProductsRow .featuredProductsCol .rating i
-{
-    color: #f83a68;
-}
-
-
-
-
-
-/* Here we will style the categories page */
-/* .categories
-{
-  
-   padding: 3% 8%;
-   background-color: blue;
-   width: 100%;
-   background-position: center;
-   background-size: cover;
-   position: relative;
-   box-sizing: border-box;
-   max-width: 1920px;
-}
-.categoriesText
-{
-     margin-top: 5%;
-     text-align: center;
-}
-.categoriesText h2
-{
+    width: 23%;
+    min-width: 250px;
     background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 45px;
-}
-.categoriesText p
-{
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    padding-top: 0.6em;
-}
-
-.categoryRow
-{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 6%;
-    flex-wrap: wrap;
-}
-
-.categoryCol
-{
-    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+    border: none;
     border-radius: 10px;
-    padding: 0.5em 0.5em;
-    margin-bottom: 15%;
-    margin-left: 2%;
-    margin-right: 2%;
-    display: inline-block;
+    padding: 10px 12px;
+    margin: 15px 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
+    text-align: center;
     position: relative;
 }
-.categoryCol img
+.fpRow .fpCol img
 {
-    height: 300px;
-    display: inline-block;
+    width: 100%;
     border-radius: 10px;
 }
-.categoryCol p
+.fpRow .fpCol .des
 {
-    margin-top: 0.3em;
-    background-color: black;
+    text-align: start;
+}
+.fpRow .fpCol .des .rating i
+{
     color: white;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 5px;
-    padding: 0.1em 0.2em;
-    width: auto;
-    text-align: center;
-} */
+}
+.fpRow .fpCol .cart
+{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+    border: solid 0.5px white;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
 
 
 
