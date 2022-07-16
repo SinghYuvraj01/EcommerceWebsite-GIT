@@ -17,7 +17,7 @@ body
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
-    padding: 3% 5%;
+    padding: 3% 8%;
     max-width: 1920px;
     position: relative;
 }
@@ -124,6 +124,44 @@ nav ul li a:hover
 
 
 
+/* Here we will style the feature section */
+.feature
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    padding: 3% 8%;
+}
+.feature .feature-box
+{
+    width: 180px;
+    text-align: center;
+    padding: 20px 15px;
+    border: solid 1px #f83a68;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+.feature .feature-box img
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.feature .feature-box h6
+{
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    color: white;
+}
+
+
 
 
 
@@ -132,7 +170,7 @@ nav ul li a:hover
 {
    /* padding-top: ; */
    padding: 3% 8%;
-   background-color: black;
+   background-color: blue;
    width: 100%;
    background-position: center;
    background-size: cover;

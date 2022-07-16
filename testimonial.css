@@ -146,109 +146,94 @@
 
 
 
-/* Here we will style the brand names section */
-.brand
-{
-    background-color: white;
-}
-.brandRow
-{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
 
-}
-.brandCol img
-{
-    width: 60%;
-    cursor: pointer;
-}
+
 
 /* Here we will style the footer part */
 .footer
 {
-    background-color: black;
-    width: 100%;
-    color: white;
-    font-size: 14px;
-    max-width: 1920px;
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 3% 8%;
+    background-color: black;
+    color: white;   
+}
+
+.footerCol
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.footer h4
+{
+    font-size: 16px;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #f83a68;
 }
 .footer p
 {
+    font-size: 14px;
+    margin: 0 0 6px 0;
     font-family: 'Poppins', sans-serif;
 }
-.footer h3
+.footer a
 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: #f83a68;
-    font-size: 18px;
-    padding-bottom: 0.5em;
+    font-size: 13px;
     text-decoration: none;
+    margin: 0 0 8px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
 }
-.footerRow
+.footer a:hover
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px 40px;
-    flex-wrap: wrap;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0 0 8px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #f83a68;
 }
-.footerCol-1, .footerCol-2, .footerCol-3, .footerCol-4
+.footer .follow
 {
-    min-width: 250px;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
-.footerCol-1
+.footer .follow i
 {
-    flex-basis: 30%;
+   color: white;
+   padding-right: 4px;
+   cursor: pointer;
 }
-.footerCol-1 img
+.footer .follow i:hover
 {
-    padding-top: 0.5em;
-    padding-right: 0.5em;
-    width: 120px;
+   color: #f83a68;
+   padding-right: 4px;
+   cursor: pointer;
 }
-.footerCol-2
+.footer .footerColInstall .rowfooterInstall img
 {
-    flex: 1;
-    text-align: center;
+  border-radius: 10px;
 }
-.footerCol-2 img
+.footer .footerColInstall img
 {
-    height: 45px;
-    cursor: pointer;
+  margin: 10px 0 15px 0;
 }
 
-.footerCol-3 , .footerCol-4
+.footer .copyright
 {
-    flex-basis: 12%;
+    width: 100%;
     text-align: center;
-}
-ul
-{
-    list-style-type: none;
-}
-ul li
-{
-    font-family: 'Poppins', sans-serif;
-}
+} 
 .footer hr
 {
     border: none;
     background: #f83a68;
     height: 1px;
     margin: 10px 0;
-}
-.copyright
-{
-    text-align: center;
 }
 
 
