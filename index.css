@@ -88,7 +88,7 @@ nav ul li a:hover
 .homepage_content
 {
     margin-left: 5%;
-    margin-top: 12%;
+    margin-top: 15%;
     display: inline-block;
     text-shadow: black;
 }
@@ -358,51 +358,8 @@ nav ul li a:hover
         font-size: 15px;
     }
 
-
-    /* Here starts the media query for the categories section */
-    .categories
+    .fpRow
     {
-       /* padding-top: ; */
-       padding: 8%;
-       background-color: black;
-       width: 100%;
-       background-position: center;
-       background-size: cover;
-       position: relative;
-       box-sizing: border-box;
-       max-width: 1920px;
+        justify-content: space-evenly;
     }
-    .categoriesText h2
-    {
-        background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 35px;
-    }
-    .categoriesText p
-    {
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        font-size: 15px;
-        padding-top: 0.6em;
-    }
-    .categoryRow
-    {
-        text-align: center;
-    }
-    .categoryCol
-    {
-        background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
-        border-radius: 10px;
-        padding: 0.5em 0.5em;
-        margin-bottom: 15%;
-        display: inline;
-    }
-    .categoryCol img
-    {
-        height: 200px;
-        display: inline;
-        border-radius: 10px;
-    }
-  
 }
