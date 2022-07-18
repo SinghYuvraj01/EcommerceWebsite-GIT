@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.shopPage_header
+{
+    background-color: black;
+    box-sizing: border-box;
+    padding: 3% 8%;
+    max-width: 1920px;
+    position: relative;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+header p
+{
+    color: #f83a68;
+    font-size: 24px;
+    font-family: 'Kaushan Script', cursive;
+    cursor: pointer;
+}
+header p span
+{
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+header img
+{
+    background-color: #f83a68;
+    padding: 0.3em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+nav ul
+{
+    display: inline-block;
+}
+nav ul li
+{
+    display: inline-block;
+    margin: 0em 1em;
+}
+nav ul li a
+{
+    text-decoration: none;
+    /* background-color: #df5547; */
+    padding: 0.1em 0.6em;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+}
+nav ul li a:hover
+{
+    text-decoration: none;
+    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+    padding: 0.1em 0.6em;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+}
+nav ul li a.active
+{
+    background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+}
+.menu-icon
+{
+    width: 28px;
+    display: none;
+}
+
+.shoppage_content
+{
+    background: url(images/Shop/b1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    
+}
+.shoppageText
+{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 5em;
+}
+.shoppageText h2
+{
+    font-size: 2em;
+}
+.shoppageText p
+{
+   font-size: 1.2em;
+   font-weight: 500;
+}
