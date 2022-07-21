@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Yuvraj Singh">
+    <title>Ecommerce Website</title>
+
+    <!-- Here we will link the css stylesheet -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="testimonial.css">
+
+    <!-- This link is for the star rating -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Here we are adding link to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Here is the home page -->
+    <div class="shopPage_header">
+        <header>
+            <p>style<span>HUB</span></p>
+            <nav>
+                <ul id = "MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class ="active" href="#">Shop</a></li>
+                    <li><a href="#Products">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="28px">
+            <img src="images/menu.png" class = "menu-icon" onclick="menutoggle()">
+        </header>
+
+    </div>
+    
+    
+    <!-- Here we will create single page -->
+    <div class="productDetails">
+        <div class="singleproductimg">
+            <img src="images/Products/f1.jpg" width="100%" id = "mainimg">
+
+            <div class="smallimg-group">
+                <div class="smallimg-col">
+                    <img src="images/Products/f1.jpg" width="100%" class = "small-img">
+                </div>
+
+                <div class="smallimg-col">
+                    <img src="images/Products/f2.jpg" width="100%" class = "small-img">
+                </div>
+
+                <div class="smallimg-col">
+                    <img src="images/Products/f3.jpg" width="100%" class = "small-img">
+                </div>
+
+                <div class="smallimg-col">
+                    <img src="images/Products/f4.jpg" width="100%" class = "small-img">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Here is the testimonial section -->
+     <div class="testimonial">
+        
+            <div class="testimonialRow">
+                <div class="testimonialCol">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Dolores, accusantium nisi. Veritatis iusto nesciunt facilis<br> voluptatem enim inventore dolorum corrupti?</p>
+                     <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                  </div>
+                  <img src="images/user-1.png">
+                  <h3>Emilia Stark</h3>
+                </div>
+
+
+
+                <div class="testimonialCol">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Dolores, accusantium nisi. Veritatis iusto nesciunt facilis<br> voluptatem enim inventore dolorum corrupti?</p>
+                     <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star-o"></i>
+                  </div>
+                  <img src="images/user-2.png">
+                  <h3>Eddy Manwik</h3>
+                </div>
+
+
+
+                <div class="testimonialCol">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Dolores, accusantium nisi. Veritatis iusto nesciunt facilis<br> voluptatem enim inventore dolorum corrupti?</p>
+                     <div class="rating">
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                       <i class="fa fa-star"></i>
+                  </div>
+                  <img src="images/user-3.png">
+                  <h3>Lia roschell</h3>
+                </div>
+
+            </div>
+    </div>
+
+
+    <!-- Here we will add the newsletter section -->
+     <section class="newsletter">
+      <div class="newstext">
+        <h4>Sign Up For Newsletter</h4>
+        <p>Get weekly update regarding new fashion and trends</p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Enter email Address">
+        <button>Sign Up</button>
+      </div>
+    </section>
+
+
+
+    <!-- Here we will add the footer section -->
+    <div class="footer">
+
+      <div class="footerCol">
+        <h4>Contact Us</h4>
+        <p><strong>Address</strong> : 465 Maja Neck, Ohio-Switzerland</p>
+        <p><strong>Phone Number</strong> : +01 6238 273</p>
+        <p><strong>Hours</strong> : 9:00 - 18::00 , Mon-Sun</p>
+        <div class="follow">
+          <h4>Follow Us On</h4>
+          <div class="followIcons">
+            <i class = "fa fa-facebook-f"></i>
+            <i class = "fa fa-twitter"></i>
+            <i class = "fa fa-instagram"></i>
+            <i class = "fa fa-pinterest"></i>
+            <i class = "fa fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerCol">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="footerCol">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">Wishlist</a>
+        <a href="#">Track Your Order</a>
+        <a href="#">Need Help</a>
+      </div>
+
+      <div class="footerColInstall">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="rowfooterInstall">
+          <img src="images/Footer/app.jpg">
+          <img src="images/Footer/play.jpg">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img src="images/Footer/pay.png">
+        
+
+      </div>
+
+      <div class="copyright">
+        <hr>
+        <p class = "copyright">Copyright 2022 - StyleHub</p>
+      </div>
+      
+
+    </div>
+
+
+    <!-- JavaScript for the toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle()
+      {
+        if( MenuItems.style.maxHeight == "0px")
+        {
+          MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+</body>
+</html>

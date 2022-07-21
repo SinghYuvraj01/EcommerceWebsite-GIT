@@ -9,20 +9,13 @@ body
     max-width: 1920px;
 }
 
-.homePage
-{
-    background:linear-gradient(to bottom , rgba(0, 0, 0, 0.1),#000000), url(images/banner\ image.jpg);
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    box-sizing: border-box;
-    padding: 3% 8%;
-    max-width: 1920px;
-    position: relative;
-}
+
 header
 {
+    padding-top: 1.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +53,6 @@ nav ul li
 nav ul li a
 {
     text-decoration: none;
-    /* background-color: #df5547; */
     padding: 0.1em 0.6em;
     border-radius: 5px;
     color: white;
@@ -97,41 +89,58 @@ nav ul li a.active:hover
     display: none;
 }
 
+
+
+/* Here we are styling the homepage content */
+.homePage
+{
+    background:linear-gradient(to bottom , rgba(0, 0, 0, 0.1),#000000), url(images/Home/Banner-Image.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 0% 5%;
+    max-width: 1920px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 .homepage_content
 {
-    margin-left: 5%;
-    margin-top: 15%;
-    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
     text-shadow: black;
+    margin-bottom: 6em;
 }
 .homepage_content a
 {
-    /* background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68); */
     border: solid 0.4px white;
     text-decoration: none;
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
-    /* font-weight: 550; */
     padding: 0.3em 0.6em;
     border-radius: 4px;
-    
+    margin-bottom: 0.3em;
 }
 .homepage_content h1
 {
-    margin-top: 0.4em;
-    font-size: 60px;
+    font-size: 4.5em;
     background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .homepage_content p
 {
-    margin-top: 0.4em;
+    margin-top: 0.3em;
     color: white;
     font-family: 'Poppins', sans-serif;
     text-decoration: nonoe;
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 
@@ -146,7 +155,7 @@ nav ul li a.active:hover
     background-color: black;
     background-position: center;
     background-size: cover;
-    padding: 3% 8%;
+    padding: 3% 5%;
 }
 .feature .feature-box
 {
@@ -202,7 +211,6 @@ nav ul li a.active:hover
 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 5em;
 }
@@ -268,7 +276,7 @@ nav ul li a.active:hover
 
 
 /* Here we are adding the media query for mobile version */
-@media only screen and (max-width:480px)
+/* @media only screen and (max-width:480px)
 {
 
     html,body
@@ -303,77 +311,38 @@ nav ul li a.active:hover
         margin-right: 20px;
         text-align: right;
     }
-
     .homePage
-   {
-    background:linear-gradient(to bottom , rgba(0, 0, 0, 0.2),#000000), url(images/banner\ image.jpg);
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    padding: 8%;
-    max-width: 767px;
-    position: relative;
-   }
-
-    header p
     {
-        color: #f83a68;
-        font-size: 20px;
-        font-family: 'Kaushan Script', cursive;
-        cursor: pointer;
+        padding: 8%;
+        background: black;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
-    header img
-    {
-        background-color: #f83a68;
-        padding: 0.4em;
-        border-radius: 10px;
-        cursor: pointer;
-    }
-
-    .homepage_content
-    {
-        margin-left: 5%;
-        margin-top: 50%;
-        display: inline-block;
-        text-shadow: black;
-        text-align: left;
-    }
+   
+ 
     .homepage_content a
     {
         background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
-        text-decoration: none;
         color: white;
-        font-family: 'Poppins', sans-serif;
-        font-size: 0.8em;
-        padding: 0.3em 0.6em;
-        border-radius: 4px;
+        font-size: 1em;
         border: none;
         
     }
     .homepage_content h1
     {
-        margin-top: 0.4em;
-        font-size: 35px;
-        background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        font-size: 40px;
     }
     .homepage_content p
     {
-        margin-top: 0.4em;
-        color: white;
-        font-family: 'Poppins', sans-serif;
-        text-decoration: nonoe;
-        font-size: 15px;
+        font-size: 16px;
     }
-
     .fpRow
     {
         justify-content: space-evenly;
     }
 }
-@media only screen and (min-width:481px) and (max-width:799px)
+@media only screen and (min-width:481px) and (max-width:780px)
 {
     html,body
     {
@@ -426,8 +395,50 @@ nav ul li a.active:hover
 
 }
 
+@media only screen and (min-width:781px) and (max-width:1100px)
+{
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .homepage_content
+    {
+        margin-left: 5%;
+        margin-top: 30%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        text-shadow: black;
+    }
+}
+@media only screen and (min-width:1101px) and (max-width:1920px)
+{
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .homepage_content
+    {
+        margin-left: 5%;
+        margin-top: 15%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        text-shadow: black;
+    }
+}
 
 
+
+ */
 
 
 

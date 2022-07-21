@@ -71,7 +71,15 @@ nav ul li a:hover
 }
 nav ul li a.active
 {
+    background: transparent;
+    color: white;
+    border: solid 1px white;
+}
+nav ul li a.active:hover
+{
     background: linear-gradient(90deg , #ff6451,#df5547,#fd5559,#fb4861,#f83a68);
+    color: white;
+    border: none;
 }
 .menu-icon
 {
@@ -136,4 +144,10 @@ nav ul li a.active
 .paginationicon
 {
     font-size: 17px;
+}
+
+
+.productDetails
+{
+    padding: 3% 8%;
 }
